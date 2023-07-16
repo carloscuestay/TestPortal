@@ -29,7 +29,7 @@ const Add = ({bus}) => {
         user_id: user.user_id
       }
 
-      fetch('http://instawebc.azurewebsites.net/api/photo/create', {
+      fetch('http://instawebc.azurewebsites.net:9000/api/photo/create', {
         method: 'POST',
         body: JSON.stringify(image),
         headers: {
