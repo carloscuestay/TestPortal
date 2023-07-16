@@ -19,7 +19,7 @@ const InputSearch = () => {
     if (user) {
       user = JSON.parse(user)
 
-      fetch(`http://localhost:9000/api/photo/user/${email}`, {
+      fetch(`http://instawebc.azurewebsites.net/api/photo/user/${email}`, {
         headers: {
           'token-auth': user.token
         }
