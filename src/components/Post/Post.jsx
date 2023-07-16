@@ -8,7 +8,7 @@ const Post = ({urlImg}) => {
         <img src={urlImg} alt="" />
       </div>
       <div className="iconos">
-        <p><span>iconos. .....</span></p>
+        <p><span>Fotos disponibles</span></p>
       </div>
     </article>
   )
