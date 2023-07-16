@@ -18,7 +18,7 @@ const FormLogin = ({bus}) => {
       password
     }
     
-    fetch('http://instawebc.azurewebsites.net:9000/api/login', {
+    fetch('http://instawebc.azurewebsites.net/api/login', {
       method: 'POST',
       body: JSON.stringify(credentials),
       headers:{

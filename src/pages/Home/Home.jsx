@@ -25,7 +25,7 @@ const Home = () => {
       
       const id = id_user_search ? id_user_search : user.user_id
 
-      fetch(`http://instawebc.azurewebsites.net:9000/api/photo/get_by_user/${id}`, {
+      fetch(`http://instawebc.azurewebsites.net/api/photo/get_by_user/${id}`, {
         headers: {
           'token-auth': user.token
         }
@@ -57,7 +57,7 @@ const Home = () => {
 
     if (user) {
       user = JSON.parse(user)
-      fetch(`http://instawebc.azurewebsites.net:9000/api/photo/get_by_user/${user.user_id}`, {
+      fetch(`http://instawebc.azurewebsites.net/api/photo/get_by_user/${user.user_id}`, {
         headers: {
           'token-auth': user.token
         }
